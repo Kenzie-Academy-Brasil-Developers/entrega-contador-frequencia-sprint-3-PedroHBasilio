@@ -1,0 +1,59 @@
+body{
+    background-color: #94a292;
+}
+
+    .input_area{
+        margin: 10px;
+        display: flex;
+        width: 100;
+        flex-direction: column;
+    }
+
+        #textInput{
+            background-color: #c8dcb7;
+            color: #586151;
+        }
+
+        #countButton{
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #99d98c;
+            padding: 15px;
+            color: white;
+            font-weight: 800;
+            box-shadow: 0 8px grey;
+            transition: 0.2s;
+        }
+
+        #countButton:active{
+            transition: 0.2s;
+            box-shadow: 0 4px grey;
+            transform: translateY(4px);
+        }
+
+
+    .output_area{
+        color: #3d4437;
+        margin: 30px;
+    }
+        
+        #lettersDiv{}
+
+        #wordsDiv{}
+
+@media (min-width: 768px){
+    body{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .input_area{
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+    #countButton{
+        margin: 0px 20px 8px 20px;
+    }
+}
